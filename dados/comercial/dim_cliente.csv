@@ -1,0 +1,141 @@
+cliente_id,cliente,porte,regiao,cidade
+1,Pereira,Medio,Nordeste,Rocha da Prata
+2,Aparecida,Pequeno,Norte,Alves do Campo
+3,Nascimento,Medio,Sudeste,Cavalcanti Verde
+4,Garcia S/A,Medio,Sul,Andrade do Campo
+5,Pires,Medio,Sul,Ferreira Alegre
+6,Oliveira,Medio,Sudeste,Pereira do Galho
+7,Santos Azevedo S/A,Medio,Sul,Gomes
+8,Vargas da Rocha S/A,Pequeno,Centro-Oeste,da Cunha
+9,Brito Garcia Ltda.,Pequeno,Sul,Santos
+10,Porto,Pequeno,Sudeste,Abreu do Galho
+11,Castro,Pequeno,Centro-Oeste,Fonseca
+12,Fogaça,Pequeno,Centro-Oeste,Azevedo Alegre
+13,Rios da Mata e Filhos,Medio,Sul,Ribeiro do Campo
+14,Pereira e Filhos,Pequeno,Nordeste,Montenegro da Mata
+15,Nascimento Siqueira S.A.,Pequeno,Centro-Oeste,Duarte das Flores
+16,Martins Garcia Ltda.,Pequeno,Centro-Oeste,Novaes Grande
+17,Rodrigues Duarte S/A,Pequeno,Sul,Leão
+18,Andrade Dias - ME,Medio,Sul,Rocha da Serra
+19,Azevedo,Medio,Norte,Guerra da Prata
+20,Nunes Silva Ltda.,Medio,Sudeste,da Rosa
+21,Rezende Monteiro - ME,Medio,Sudeste,Costela das Pedras
+22,Casa Grande,Pequeno,Sudeste,Martins dos Dourados
+23,Carvalho,Medio,Centro-Oeste,Rocha de Cunha
+24,Souza Novais - EI,Pequeno,Norte,Vieira de Vieira
+25,Souza,Pequeno,Sudeste,Ribeiro
+26,Pacheco,Pequeno,Norte,da Paz
+27,Fonseca,Medio,Sul,Borges de Goiás
+28,Carvalho Moraes - ME,Pequeno,Sudeste,Câmara do Oeste
+29,Sá S/A,Pequeno,Centro-Oeste,Alves
+30,Cassiano e Filhos,Pequeno,Sul,da Cruz
+31,Vieira Rodrigues - ME,Pequeno,Sul,Pimenta de Vargas
+32,Gomes - ME,Medio,Sudeste,Marques
+33,Moura,Pequeno,Norte,Pires Verde
+34,Novaes,Pequeno,Centro-Oeste,Silva
+35,Rodrigues e Filhos,Pequeno,Norte,Monteiro das Flores
+36,Rodrigues - EI,Medio,Nordeste,Casa Grande
+37,Vargas,Pequeno,Sudeste,Sá
+38,Camargo,Pequeno,Nordeste,Vasconcelos
+39,Lopes,Pequeno,Sul,Câmara da Serra
+40,Marques Abreu e Filhos,Grande,Sul,Aragão de Novais
+41,Montenegro,Grande,Nordeste,Campos
+42,Montenegro Caldeira e Filhos,Medio,Nordeste,Carvalho de Martins
+43,Porto,Pequeno,Sudeste,Sá dos Dourados
+44,Cassiano Freitas S.A.,Grande,Sudeste,Novaes dos Dourados
+45,Peixoto Ltda.,Medio,Centro-Oeste,Souza
+46,Almeida,Medio,Nordeste,Machado de da Luz
+47,Fonseca Ltda.,Pequeno,Centro-Oeste,Porto
+48,Araújo da Costa - EI,Pequeno,Sudeste,Vargas do Galho
+49,Barros e Filhos,Pequeno,Sudeste,Pires de da Costa
+50,Azevedo,Grande,Sudeste,Macedo de Minas
+51,Cardoso Ribeiro - ME,Pequeno,Centro-Oeste,da Costa Paulista
+52,da Luz Moura - EI,Pequeno,Nordeste,Dias da Prata
+53,Cunha,Pequeno,Sudeste,Carvalho
+54,Silva das Neves - ME,Medio,Sudeste,da Conceição
+55,Macedo,Pequeno,Sudeste,Sales Grande
+56,Campos,Medio,Centro-Oeste,Azevedo
+57,Câmara Azevedo Ltda.,Medio,Nordeste,Jesus Alegre
+58,Pastor - EI,Medio,Sul,Leão de Araújo
+59,Pastor Câmara S/A,Pequeno,Sul,Leão
+60,Santos e Filhos,Medio,Centro-Oeste,Vargas Verde
+61,da Conceição S/A,Medio,Sul,Teixeira
+62,Farias S/A,Medio,Nordeste,Mendes do Sul
+63,da Mota Rios - ME,Pequeno,Sudeste,da Rosa das Flores
+64,Nogueira Cardoso e Filhos,Pequeno,Sul,Nascimento da Prata
+65,da Cruz,Pequeno,Norte,Mendonça
+66,Jesus,Pequeno,Sul,da Mata
+67,Brito Brito e Filhos,Pequeno,Sudeste,Mendonça do Sul
+68,Fogaça,Pequeno,Sul,Fernandes das Flores
+69,Jesus,Pequeno,Sul,Martins
+70,Siqueira,Medio,Sul,Pinto
+71,Rocha e Filhos,Pequeno,Sul,Gonçalves
+72,Araújo - ME,Grande,Sul,Barros
+73,Caldeira,Medio,Sul,Carvalho dos Dourados
+74,Correia Correia - EI,Pequeno,Centro-Oeste,Aragão
+75,Carvalho,Medio,Centro-Oeste,Garcia Alegre
+76,Cirino,Pequeno,Sudeste,Marques
+77,Martins,Grande,Sudeste,Fernandes das Flores
+78,Barbosa Macedo - EI,Pequeno,Sudeste,Sá das Pedras
+79,Aragão e Filhos,Medio,Nordeste,Barros do Amparo
+80,Borges S.A.,Pequeno,Nordeste,Souza
+81,Jesus Mendonça - ME,Pequeno,Sul,Ferreira
+82,Guerra Araújo S.A.,Pequeno,Sul,Rezende
+83,Abreu,Grande,Sudeste,Vasconcelos
+84,da Luz,Medio,Sudeste,Sá
+85,da Paz,Pequeno,Centro-Oeste,da Cruz
+86,Sampaio,Pequeno,Sudeste,Almeida
+87,Cassiano,Pequeno,Sul,da Costa
+88,da Rocha Cunha S/A,Pequeno,Sudeste,Melo
+89,Souza Ltda.,Pequeno,Sudeste,Nunes
+90,Aragão - EI,Pequeno,Sul,Martins
+91,Montenegro,Medio,Nordeste,Vargas da Praia
+92,Araújo Moraes S/A,Grande,Sul,Pereira
+93,Azevedo Peixoto S/A,Pequeno,Norte,Vasconcelos
+94,Guerra Campos - EI,Medio,Sul,das Neves
+95,Pacheco Peixoto S/A,Pequeno,Nordeste,Pacheco
+96,Leão e Filhos,Medio,Nordeste,das Neves
+97,da Luz,Pequeno,Norte,Gonçalves do Oeste
+98,Rios Silva Ltda.,Medio,Nordeste,Pastor
+99,da Luz Gonçalves S.A.,Medio,Nordeste,Caldeira
+100,Marques,Medio,Centro-Oeste,Rodrigues do Campo
+101,Sá,Pequeno,Nordeste,Ferreira
+102,Albuquerque - ME,Grande,Sul,Ribeiro da Praia
+103,Barbosa - EI,Pequeno,Sudeste,Montenegro
+104,Montenegro da Luz S.A.,Pequeno,Sudeste,Albuquerque das Pedras
+105,Azevedo,Medio,Nordeste,Caldeira de Lopes
+106,Freitas da Paz S.A.,Pequeno,Sudeste,Porto dos Dourados
+107,Nogueira,Medio,Sudeste,Lopes
+108,Pimenta,Medio,Centro-Oeste,Siqueira
+109,Rios - EI,Pequeno,Sudeste,Pimenta da Prata
+110,Ribeiro,Grande,Sul,Martins de Lopes
+111,Carvalho Ltda.,Pequeno,Sudeste,Duarte de Goiás
+112,Caldeira e Filhos,Pequeno,Sudeste,da Mota
+113,da Mata da Paz - EI,Pequeno,Sudeste,da Cruz de Sá
+114,Silva Fernandes S.A.,Grande,Sudeste,Nunes de Pimenta
+115,Montenegro,Pequeno,Sudeste,Fernandes do Sul
+116,da Cunha,Pequeno,Sudeste,Duarte de Cirino
+117,Borges e Filhos,Pequeno,Sudeste,Cunha de Fogaça
+118,da Mota,Grande,Centro-Oeste,Fernandes Paulista
+119,Abreu Ltda.,Grande,Sudeste,Novais do Sul
+120,Porto da Luz S.A.,Medio,Norte,Barros
+121,Novaes,Grande,Nordeste,Silveira
+122,Novais,Grande,Sudeste,Mendonça da Prata
+123,Camargo S/A,Pequeno,Sudeste,Sales
+124,Nogueira Andrade Ltda.,Pequeno,Sudeste,Ramos de Silva
+125,Lopes Cardoso S/A,Medio,Nordeste,Machado de Vieira
+126,Fonseca,Medio,Centro-Oeste,Borges
+127,Fogaça S.A.,Pequeno,Nordeste,Câmara das Flores
+128,Rios Caldeira Ltda.,Pequeno,Sudeste,das Neves
+129,Pinto,Medio,Centro-Oeste,Melo da Prata
+130,da Costa Castro S.A.,Pequeno,Sudeste,Lima da Prata
+131,Alves,Grande,Centro-Oeste,Fogaça dos Dourados
+132,Sousa Farias - ME,Pequeno,Sul,das Neves Paulista
+133,da Mata Castro e Filhos,Pequeno,Centro-Oeste,Campos
+134,Garcia S/A,Medio,Nordeste,Dias
+135,Câmara,Pequeno,Sul,Souza
+136,Marques Ferreira Ltda.,Pequeno,Centro-Oeste,Correia
+137,Câmara Alves e Filhos,Medio,Sul,Sousa
+138,Guerra Farias Ltda.,Grande,Centro-Oeste,da Mota de Silveira
+139,Vargas Ltda.,Pequeno,Sul,Brito do Oeste
+140,Ramos,Pequeno,Norte,da Conceição da Praia

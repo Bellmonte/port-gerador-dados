@@ -1,0 +1,7 @@
+# Versoes pinadas (testadas em 10-08-2026). Pin exato garante que o feed diario
+# no GitHub Actions gere o mesmo dado que a maquina local, sem quebrar quando
+# uma dependencia lancar versao nova.
+Faker==40.36.0
+numpy==2.5.2
+pandas==3.0.5
+python-dateutil==2.9.0.post0

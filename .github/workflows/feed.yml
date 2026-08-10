@@ -1,0 +1,55 @@
+name: feed-dados-sinteticos
+
+# Feed diario de dado sintetico, custo zero.
+# Roda o gerador todo dia e comita os CSVs neste mesmo repo (publico); o Power BI
+# le os arquivos pela URL raw do GitHub. A janela de datas do gerador termina em
+# "hoje", entao o dado tem cara de atual sem nenhuma infra externa.
+#
+# ATENCAO: este workflow so fica ATIVO quando a pasta gerador-dados vira a raiz do
+# repo publico port-gerador-dados. No repo de oficina (estruturar-portfolio) ele
+# fica inerte de proposito, porque o GitHub so le .github/workflows/ na raiz.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # todo dia as 06:00 UTC (03:00 BRT)
+  workflow_dispatch: {}     # permite disparar manual pela aba Actions
+
+# Um push do proprio bot nao precisa concorrer com outra execucao.
+concurrency:
+  group: feed-dados-sinteticos
+  cancel-in-progress: false
+
+permissions:
+  contents: write           # necessario para o passo de commit/push
+
+jobs:
+  gerar-e-publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias (versoes pinadas)
+        run: pip install -r requirements.txt
+
+      - name: Gerar dado sintetico
+        # --saida dados escreve na pasta versionada do repo, nao no local/ da oficina.
+        # Para novos cenarios, acrescente uma linha aqui (ex.: python gerar.py credito ...).
+        run: python gerar.py comercial --saida dados
+
+      - name: Comitar e publicar os CSVs
+        run: |
+          git config user.name  "feed-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dados
+          if git diff --cached --quiet; then
+            echo "Sem mudanca no dado; nada a comitar."
+          else
+            git commit -m "chore: feed diario de dado sintetico ($(date -u +%Y-%m-%d))"
+            git push
+          fi

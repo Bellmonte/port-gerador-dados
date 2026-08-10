@@ -1,0 +1,19 @@
+# .gitignore do repo publico port-gerador-dados.
+# Atencao: aqui a pasta dados/ E versionada de proposito (o feed comita os CSVs nela),
+# entao NAO se ignora *.csv. Este repo nao tem dado real; tudo e sintetico.
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Ambiente / segredos ---
+.env
+.env.*
+
+# --- SO / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

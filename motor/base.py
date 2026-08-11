@@ -19,7 +19,7 @@ from faker import Faker
 # Aviso obrigatorio em toda peca publica (ver POLITICA_DESCARACTERIZACAO.md).
 # Vai no topo de cada CSV como comentario e no README do gerador.
 AVISO = (
-    "Dado 100% sintetico, gerado para o portfolio B&B Vector Value Method. "
+    "Dado 100% sintetico, gerado para demonstracao de portfolio. "
     "Nomes, numeros e entidades sao ficticios, criados por sorteio, sem "
     "relacao com organizacoes, pessoas ou dados reais."
 )

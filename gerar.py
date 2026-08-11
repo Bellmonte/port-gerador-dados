@@ -1,8 +1,8 @@
-"""Gerador de dado sintetico do portfolio B&B Vector Value Method.
+"""Gerador de dado sintetico do portfolio.
 
 Uso:
     python gerar.py comercial
-    python gerar.py comercial --seed 7 --meses 24 --saida ../../local/dados-sinteticos
+    python gerar.py comercial --seed 7 --meses 24 --saida dados
 
 Cada cenario e um modulo em `cenarios/`. A saida sao CSVs limpos + um arquivo
 de aviso de dado ficticio. Semente fixa (forma reproduzivel), janela de datas

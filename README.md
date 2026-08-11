@@ -1,8 +1,10 @@
 # port-gerador-dados
 
-Gerador de dado sintético determinístico e um feed diário que roda de graça no GitHub
-Actions. É a fundação de dados do portfólio **B&B Vector**: todas as demais peças (dashboards
-de BI, camada de ciência, lakehouse) consomem os CSVs que saem daqui, de uma fonte única.
+Gerador de dado sintético determinístico com um feed diário que roda de graça no GitHub
+Actions. Produz um star schema comercial fictício e o mantém atualizado sozinho, servindo de
+fonte única de dados para outras peças do portfólio (dashboards de BI, camada de ciência,
+lakehouse). É um exercício de como montar uma base de dados plausível, reprodutível e
+automatizada do zero, sem depender de nenhuma infraestrutura paga.
 
 > **Dado 100% fictício.** Nomes de cliente, produto e vendedor são sorteados (faker `pt_BR`),
 > sem qualquer vínculo com dado real de pessoa ou empresa. Serve para demonstração.
@@ -58,3 +60,7 @@ Dá para disparar manual pela aba **Actions** (`workflow_dispatch`) além do age
 ## Licença
 
 MIT. Use à vontade; o dado é fictício e serve de exemplo.
+
+---
+
+<sub>**B&B** · Matheus Belmonte — do dado à decisão.</sub>

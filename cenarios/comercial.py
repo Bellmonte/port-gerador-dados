@@ -2,8 +2,8 @@
 
 Dimensoes (produto, cliente, vendedor, regiao, calendario) e um fato de vendas
 coerente, com sazonalidade e margem plausivel. Todo nome e sorteado (faker),
-nenhum vinculo com dado real. E a base da espinha do portfolio e alimenta o
-dashboard de Analise Comercial.
+nenhum vinculo com dado real. Alimenta o dashboard de Analise Comercial do
+portfolio.
 """
 
 from __future__ import annotations

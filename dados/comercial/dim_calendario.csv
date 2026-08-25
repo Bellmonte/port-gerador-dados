@@ -1088,3 +1088,4 @@ data,ano,mes,nome_mes,ano_mes,trimestre,dia_semana,fim_de_semana
 2026-08-22,2026,8,Agosto,2026-08,3,Sabado,True
 2026-08-23,2026,8,Agosto,2026-08,3,Domingo,True
 2026-08-24,2026,8,Agosto,2026-08,3,Segunda,False
+2026-08-25,2026,8,Agosto,2026-08,3,Terca,False

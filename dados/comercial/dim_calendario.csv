@@ -1084,3 +1084,4 @@ data,ano,mes,nome_mes,ano_mes,trimestre,dia_semana,fim_de_semana
 2026-09-17,2026,9,Setembro,2026-09,3,Quinta,False
 2026-09-18,2026,9,Setembro,2026-09,3,Sexta,False
 2026-09-19,2026,9,Setembro,2026-09,3,Sabado,True
+2026-09-20,2026,9,Setembro,2026-09,3,Domingo,True

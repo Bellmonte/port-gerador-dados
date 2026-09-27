@@ -7,7 +7,9 @@ escrever CSV com um cabecalho de aviso de dado ficticio.
 
 from __future__ import annotations
 
-from dataclasses import dataclass
+import json
+import math
+from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
 
@@ -35,6 +37,16 @@ class Contexto:
     faker: Faker
     hoje: date
     meses: int
+    seed: int = 42
+    # Parametros especificos do cenario (volume, colunas opcionais). Cada
+    # cenario le o que conhece e usa o proprio padrao para o que faltar.
+    parametros: dict = field(default_factory=dict)
+
+    def rng_extra(self, fluxo: int) -> np.random.Generator:
+        """Gerador aleatorio independente do principal. Coluna opcional sorteada
+        daqui nao consome o `rng` principal, entao ligar ou desligar a opcao nao
+        altera nenhuma coluna existente."""
+        return np.random.default_rng([self.seed, fluxo])
 
     @property
     def inicio(self) -> date:
@@ -42,11 +54,35 @@ class Contexto:
         return (self.hoje.replace(day=1) - relativedelta(months=self.meses - 1))
 
 
-def criar_contexto(seed: int = 42, meses: int = 36, hoje: date | None = None) -> Contexto:
+def criar_contexto(
+    seed: int = 42,
+    meses: int = 36,
+    hoje: date | None = None,
+    parametros: dict | None = None,
+) -> Contexto:
     rng = np.random.default_rng(seed)
     faker = Faker("pt_BR")
     faker.seed_instance(seed)
-    return Contexto(rng=rng, faker=faker, hoje=hoje or date.today(), meses=meses)
+    return Contexto(
+        rng=rng, faker=faker, hoje=hoje or date.today(), meses=meses,
+        seed=seed, parametros=dict(parametros or {}),
+    )
+
+
+def nomes_unicos(nomes: list[str]) -> list[str]:
+    """Garante nome unico sem novo sorteio: a primeira ocorrencia fica como
+    veio e as repetidas ganham sufixo numerico (`Nome 2`, `Nome 3`). Nao consome
+    RNG nem faker, entao nada depois dela muda de valor."""
+    usados: set[str] = set()
+    saida = []
+    for nome in nomes:
+        candidato, k = nome, 2
+        while candidato in usados:
+            candidato = f"{nome} {k}"
+            k += 1
+        usados.add(candidato)
+        saida.append(candidato)
+    return saida
 
 
 def calendario(ctx: Contexto) -> pd.DataFrame:
@@ -92,6 +128,38 @@ def escrever_csv(df: pd.DataFrame, saida: Path, nome: str) -> Path:
     saida.mkdir(parents=True, exist_ok=True)
     caminho = saida / f"{nome}.csv"
     df.to_csv(caminho, index=False, encoding="utf-8")
+    return caminho
+
+
+def escrever_manifesto(
+    saida: Path,
+    parametros: dict,
+    tabelas: dict[str, pd.DataFrame],
+    controles: dict[str, list[str]],
+) -> Path:
+    """Grava `_manifesto.json`: parametros da execucao, linhas por tabela e soma
+    das colunas de controle. E o registro de quanto saiu e a referencia para
+    conferir se quem consome o dado leu tudo. Sem carimbo de hora de proposito:
+    mesma entrada, mesmo arquivo."""
+    somas = {}
+    for nome, colunas in controles.items():
+        df = tabelas[nome]
+        somas[nome] = {}
+        for col in colunas:
+            valores = df[col].to_numpy()
+            if np.issubdtype(valores.dtype, np.integer):
+                somas[nome][col] = int(valores.sum())
+            else:
+                # fsum e exato ate o arredondamento final: total de controle estavel.
+                somas[nome][col] = round(math.fsum(valores.tolist()), 2)
+    manifesto = {
+        "parametros": parametros,
+        "linhas": {nome: int(len(df)) for nome, df in tabelas.items()},
+        "somas": somas,
+    }
+    saida.mkdir(parents=True, exist_ok=True)
+    caminho = saida / "_manifesto.json"
+    caminho.write_text(json.dumps(manifesto, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return caminho
 
 

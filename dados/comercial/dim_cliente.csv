@@ -41,14 +41,14 @@ cliente_id,cliente,porte,regiao,cidade
 40,Marques Abreu e Filhos,Grande,Sul,Aragão de Novais
 41,Montenegro,Grande,Nordeste,Campos
 42,Montenegro Caldeira e Filhos,Medio,Nordeste,Carvalho de Martins
-43,Porto,Pequeno,Sudeste,Sá dos Dourados
+43,Porto 2,Pequeno,Sudeste,Sá dos Dourados
 44,Cassiano Freitas S.A.,Grande,Sudeste,Novaes dos Dourados
 45,Peixoto Ltda.,Medio,Centro-Oeste,Souza
 46,Almeida,Medio,Nordeste,Machado de da Luz
 47,Fonseca Ltda.,Pequeno,Centro-Oeste,Porto
 48,Araújo da Costa - EI,Pequeno,Sudeste,Vargas do Galho
 49,Barros e Filhos,Pequeno,Sudeste,Pires de da Costa
-50,Azevedo,Grande,Sudeste,Macedo de Minas
+50,Azevedo 2,Grande,Sudeste,Macedo de Minas
 51,Cardoso Ribeiro - ME,Pequeno,Centro-Oeste,da Costa Paulista
 52,da Luz Moura - EI,Pequeno,Nordeste,Dias da Prata
 53,Cunha,Pequeno,Sudeste,Carvalho
@@ -66,14 +66,14 @@ cliente_id,cliente,porte,regiao,cidade
 65,da Cruz,Pequeno,Norte,Mendonça
 66,Jesus,Pequeno,Sul,da Mata
 67,Brito Brito e Filhos,Pequeno,Sudeste,Mendonça do Sul
-68,Fogaça,Pequeno,Sul,Fernandes das Flores
-69,Jesus,Pequeno,Sul,Martins
+68,Fogaça 2,Pequeno,Sul,Fernandes das Flores
+69,Jesus 2,Pequeno,Sul,Martins
 70,Siqueira,Medio,Sul,Pinto
 71,Rocha e Filhos,Pequeno,Sul,Gonçalves
 72,Araújo - ME,Grande,Sul,Barros
 73,Caldeira,Medio,Sul,Carvalho dos Dourados
 74,Correia Correia - EI,Pequeno,Centro-Oeste,Aragão
-75,Carvalho,Medio,Centro-Oeste,Garcia Alegre
+75,Carvalho 2,Medio,Centro-Oeste,Garcia Alegre
 76,Cirino,Pequeno,Sudeste,Marques
 77,Martins,Grande,Sudeste,Fernandes das Flores
 78,Barbosa Macedo - EI,Pequeno,Sudeste,Sá das Pedras
@@ -89,13 +89,13 @@ cliente_id,cliente,porte,regiao,cidade
 88,da Rocha Cunha S/A,Pequeno,Sudeste,Melo
 89,Souza Ltda.,Pequeno,Sudeste,Nunes
 90,Aragão - EI,Pequeno,Sul,Martins
-91,Montenegro,Medio,Nordeste,Vargas da Praia
+91,Montenegro 2,Medio,Nordeste,Vargas da Praia
 92,Araújo Moraes S/A,Grande,Sul,Pereira
 93,Azevedo Peixoto S/A,Pequeno,Norte,Vasconcelos
 94,Guerra Campos - EI,Medio,Sul,das Neves
 95,Pacheco Peixoto S/A,Pequeno,Nordeste,Pacheco
 96,Leão e Filhos,Medio,Nordeste,das Neves
-97,da Luz,Pequeno,Norte,Gonçalves do Oeste
+97,da Luz 2,Pequeno,Norte,Gonçalves do Oeste
 98,Rios Silva Ltda.,Medio,Nordeste,Pastor
 99,da Luz Gonçalves S.A.,Medio,Nordeste,Caldeira
 100,Marques,Medio,Centro-Oeste,Rodrigues do Campo
@@ -103,7 +103,7 @@ cliente_id,cliente,porte,regiao,cidade
 102,Albuquerque - ME,Grande,Sul,Ribeiro da Praia
 103,Barbosa - EI,Pequeno,Sudeste,Montenegro
 104,Montenegro da Luz S.A.,Pequeno,Sudeste,Albuquerque das Pedras
-105,Azevedo,Medio,Nordeste,Caldeira de Lopes
+105,Azevedo 3,Medio,Nordeste,Caldeira de Lopes
 106,Freitas da Paz S.A.,Pequeno,Sudeste,Porto dos Dourados
 107,Nogueira,Medio,Sudeste,Lopes
 108,Pimenta,Medio,Centro-Oeste,Siqueira
@@ -113,18 +113,18 @@ cliente_id,cliente,porte,regiao,cidade
 112,Caldeira e Filhos,Pequeno,Sudeste,da Mota
 113,da Mata da Paz - EI,Pequeno,Sudeste,da Cruz de Sá
 114,Silva Fernandes S.A.,Grande,Sudeste,Nunes de Pimenta
-115,Montenegro,Pequeno,Sudeste,Fernandes do Sul
+115,Montenegro 3,Pequeno,Sudeste,Fernandes do Sul
 116,da Cunha,Pequeno,Sudeste,Duarte de Cirino
 117,Borges e Filhos,Pequeno,Sudeste,Cunha de Fogaça
 118,da Mota,Grande,Centro-Oeste,Fernandes Paulista
 119,Abreu Ltda.,Grande,Sudeste,Novais do Sul
 120,Porto da Luz S.A.,Medio,Norte,Barros
-121,Novaes,Grande,Nordeste,Silveira
+121,Novaes 2,Grande,Nordeste,Silveira
 122,Novais,Grande,Sudeste,Mendonça da Prata
 123,Camargo S/A,Pequeno,Sudeste,Sales
 124,Nogueira Andrade Ltda.,Pequeno,Sudeste,Ramos de Silva
 125,Lopes Cardoso S/A,Medio,Nordeste,Machado de Vieira
-126,Fonseca,Medio,Centro-Oeste,Borges
+126,Fonseca 2,Medio,Centro-Oeste,Borges
 127,Fogaça S.A.,Pequeno,Nordeste,Câmara das Flores
 128,Rios Caldeira Ltda.,Pequeno,Sudeste,das Neves
 129,Pinto,Medio,Centro-Oeste,Melo da Prata
@@ -132,7 +132,7 @@ cliente_id,cliente,porte,regiao,cidade
 131,Alves,Grande,Centro-Oeste,Fogaça dos Dourados
 132,Sousa Farias - ME,Pequeno,Sul,das Neves Paulista
 133,da Mata Castro e Filhos,Pequeno,Centro-Oeste,Campos
-134,Garcia S/A,Medio,Nordeste,Dias
+134,Garcia S/A 2,Medio,Nordeste,Dias
 135,Câmara,Pequeno,Sul,Souza
 136,Marques Ferreira Ltda.,Pequeno,Centro-Oeste,Correia
 137,Câmara Alves e Filhos,Medio,Sul,Sousa

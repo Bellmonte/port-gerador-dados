@@ -19,11 +19,12 @@ from dateutil.relativedelta import relativedelta
 from faker import Faker
 
 # Aviso obrigatorio em toda peca publica (ver POLITICA_DESCARACTERIZACAO.md).
-# Vai no topo de cada CSV como comentario e no README do gerador.
+# Vai num arquivo a parte na pasta de saida e no README do gerador. Texto que
+# chega a quem le o dado sai acentuado; o codigo continua em ASCII.
 AVISO = (
-    "Dado 100% sintetico, gerado para demonstracao de portfolio. "
-    "Nomes, numeros e entidades sao ficticios, criados por sorteio, sem "
-    "relacao com organizacoes, pessoas ou dados reais."
+    "Dado 100% sintético, gerado para demonstração de portfólio. "
+    "Nomes, números e entidades são fictícios, criados por sorteio, sem "
+    "relação com organizações, pessoas ou dados reais."
 )
 
 
@@ -89,10 +90,10 @@ def calendario(ctx: Contexto) -> pd.DataFrame:
     """Tabela de datas dia a dia, do inicio da janela ate hoje."""
     dias = pd.date_range(start=ctx.inicio, end=ctx.hoje, freq="D")
     nomes_mes = [
-        "Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho",
+        "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
         "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro",
     ]
-    dias_semana = ["Segunda", "Terca", "Quarta", "Quinta", "Sexta", "Sabado", "Domingo"]
+    dias_semana = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"]
     df = pd.DataFrame({"data": dias})
     df["ano"] = df["data"].dt.year
     df["mes"] = df["data"].dt.month

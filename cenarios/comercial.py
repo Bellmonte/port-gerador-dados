@@ -62,7 +62,7 @@ def _dim_produto(ctx: Contexto, n: int = 24) -> pd.DataFrame:
 
 
 def _dim_cliente(ctx: Contexto, n: int = 140) -> pd.DataFrame:
-    portes = ctx.rng.choice(["Pequeno", "Medio", "Grande"], size=n, p=[0.55, 0.32, 0.13])
+    portes = ctx.rng.choice(["Pequeno", "Médio", "Grande"], size=n, p=[0.55, 0.32, 0.13])
     regioes = ctx.rng.choice(_REGIOES, size=n, p=_PESO_REGIAO)
     return pd.DataFrame({
         "cliente_id": np.arange(1, n + 1),
@@ -123,7 +123,7 @@ def _fato_vendas(ctx, cal, prod, cli, vend, linhas_alvo=48000) -> pd.DataFrame:
     perf = vend["fator_performance"].to_numpy()[vendedor_ix]
 
     # Quantidade: base por porte do cliente, modulada pela performance.
-    porte_base = {"Pequeno": 6, "Medio": 18, "Grande": 45}
+    porte_base = {"Pequeno": 6, "Médio": 18, "Grande": 45}
     base = cli["porte"].map(porte_base).to_numpy()[cliente_ix]
     quantidade = np.maximum(1, rng.poisson(base * perf * 0.5)).astype(int)
 
@@ -228,7 +228,7 @@ def _fato_por_pedido(ctx, cal, prod, cli, vend, linhas_alvo) -> pd.DataFrame:
     preco_tab = prod["preco_tabela"].to_numpy()[produto_ix]
     custo_un = prod["custo_unitario"].to_numpy()[produto_ix]
     perf = vend["fator_performance"].to_numpy()[vendedor_ix]
-    porte_base = {"Pequeno": 6, "Medio": 18, "Grande": 45}
+    porte_base = {"Pequeno": 6, "Médio": 18, "Grande": 45}
     base = cli["porte"].map(porte_base).to_numpy()[cliente_ix]
     quantidade = np.maximum(1, rng.poisson(base * perf * 0.5)).astype(int)
     desc_max = np.where(cli["porte"].to_numpy()[cliente_ix] == "Grande", 0.18, 0.10)

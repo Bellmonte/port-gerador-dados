@@ -1,1 +1,1 @@
-Dado 100% sintetico, gerado para demonstracao de portfolio. Nomes, numeros e entidades sao ficticios, criados por sorteio, sem relacao com organizacoes, pessoas ou dados reais.
+Dado 100% sintético, gerado para demonstração de portfólio. Nomes, números e entidades são fictícios, criados por sorteio, sem relação com organizações, pessoas ou dados reais.

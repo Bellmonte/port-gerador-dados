@@ -1089,3 +1089,4 @@ data,ano,mes,nome_mes,ano_mes,trimestre,dia_semana,fim_de_semana
 2026-10-23,2026,10,Outubro,2026-10,4,Sexta,False
 2026-10-24,2026,10,Outubro,2026-10,4,Sábado,True
 2026-10-25,2026,10,Outubro,2026-10,4,Domingo,True
+2026-10-26,2026,10,Outubro,2026-10,4,Segunda,False

@@ -4,7 +4,7 @@
     "seed": 42,
     "meses": 36,
     "inicio": "2023-11-01",
-    "hoje": "2026-10-28",
+    "hoje": "2026-10-29",
     "linhas": 48000,
     "clientes": 140,
     "produtos": 24,
@@ -12,7 +12,7 @@
     "colunas_origem": false
   },
   "linhas": {
-    "dim_calendario": 1093,
+    "dim_calendario": 1094,
     "dim_produto": 24,
     "dim_cliente": 140,
     "dim_vendedor": 16,
@@ -21,11 +21,11 @@
   },
   "somas": {
     "fato_vendas": {
-      "quantidade": 376255,
-      "receita_bruta": 110715110.53,
-      "receita_liquida": 103551315.84,
-      "custo_total": 61426506.49,
-      "margem": 42124809.35
+      "quantidade": 376431,
+      "receita_bruta": 110756973.96,
+      "receita_liquida": 103697991.04,
+      "custo_total": 61428122.69,
+      "margem": 42269868.35
     }
   }
 }

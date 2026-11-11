@@ -6,7 +6,7 @@ name: feed-dados-sinteticos
 # "hoje", entao o dado tem cara de atual sem nenhuma infra externa.
 #
 # ATENCAO: este workflow so fica ATIVO quando a pasta gerador-dados vira a raiz do
-# repo publico port-gerador-dados. No repo de oficina (estruturar-portfolio) ele
+# repo publico gerador-de-dados. No repo de oficina (estruturar-portfolio) ele
 # fica inerte de proposito, porque o GitHub so le .github/workflows/ na raiz.
 
 on:

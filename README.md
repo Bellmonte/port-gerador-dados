@@ -1,4 +1,4 @@
-# port-gerador-dados
+# gerador-de-dados
 
 Gerador de dado sintético determinístico com um feed diário que roda de graça no GitHub
 Actions. Produz um star schema comercial fictício e o mantém atualizado sozinho, servindo de
@@ -112,7 +112,7 @@ dia às 06:00 UTC, com os parâmetros padrão, e comita os CSVs e o manifesto na
 URL raw do GitHub, por exemplo o Power BI apontando para:
 
 ```
-https://raw.githubusercontent.com/Bellmonte/port-gerador-dados/main/dados/comercial/fato_vendas.csv
+https://raw.githubusercontent.com/Bellmonte/gerador-de-dados/main/dados/comercial/fato_vendas.csv
 ```
 
 Dá para disparar manual pela aba **Actions** (`workflow_dispatch`) além do agendamento.
